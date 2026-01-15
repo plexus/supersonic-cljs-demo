@@ -1,5 +1,7 @@
 # SuperSonic ClojureScript Demo
 
+[**Try it out!**](https://arnebrasseur.net/supersonic-cljs/)
+
 [SuperSonic](https://github.com/samaaron/supersonic) is a project by Sam Aaron
 (of Sonic Pi and Overtone fame), to compile Supercollider (the sound synthesis
 engine underlying both Overtone and Sonic Pi) to WASM, so it can be used in a
