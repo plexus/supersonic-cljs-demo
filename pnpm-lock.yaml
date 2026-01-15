@@ -1,0 +1,99 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      buffer:
+        specifier: ^6.0.3
+        version: 6.0.3
+      supersonic-scsynth:
+        specifier: ^0.25.5
+        version: 0.25.5
+      supersonic-scsynth-core:
+        specifier: ^0.25.5
+        version: 0.25.5
+      supersonic-scsynth-synthdefs:
+        specifier: ^0.25.5
+        version: 0.25.5
+
+packages:
+
+  '@thi.ng/api@8.12.11':
+    resolution: {integrity: sha512-1Ucknsp1ogvfvDaBxhoIXEIEJDYfZMdBADaHEa6AIp/3n2dGMgWY06NnSvMgL+ED7OfYMkopXPpPUFSiV5nQxg==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/binary@3.6.0':
+    resolution: {integrity: sha512-Ka5TLFZTiyjDyxZ8cOWs3xQgNTmjHHYjSpK+GlKMaJTd6fphUN8rHDEe7t91NgHpnj2hGxDmVRYoezI65dAVPA==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/checks@3.8.1':
+    resolution: {integrity: sha512-RZj9o6wOBnSuRyaoEDsekCdtIRo9/kWuGvj5tcAUotzCUBtmLGRcJfDpqEWMYocNrwK8d6TyNMyUS8XJT7nYaQ==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/errors@2.6.0':
+    resolution: {integrity: sha512-wBfSWz81sqM1FWX2ucW9KGLSFzGvsBxwX5y5t6Oty0QWO9mY8JIZC+ZBPzX5E6ExZiuGIgM8NtkTboTnXXlfUQ==}
+    engines: {node: '>=18'}
+
+  '@thi.ng/malloc@6.1.133':
+    resolution: {integrity: sha512-URjjKDN8cUChWy55MAI1OBwuJFJLngfC7L5VMxoWvig+4p3PdGiguoMgkCisf7V0pbdlzrGC2ADCt6v6X4MDiw==}
+    engines: {node: '>=18'}
+
+  base64-js@1.5.1:
+    resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
+
+  buffer@6.0.3:
+    resolution: {integrity: sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==}
+
+  ieee754@1.2.1:
+    resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
+
+  supersonic-scsynth-core@0.25.5:
+    resolution: {integrity: sha512-fj1ntacDJ5VclHfCwhI/ZNFtqSAZ06i815CnWJQp8EouWY5fuZGIHfrlRbWWp5JlvF/C4sU9seAtYMphGUvLxQ==}
+
+  supersonic-scsynth-synthdefs@0.25.5:
+    resolution: {integrity: sha512-kSiMnPpIaX+jTJsPCEWlp458RxEe97vZGBu0hYX4DkyrvUfvJkkz4ni/t3Vst/uP9angujWsT5O0DmLlqu7AKQ==}
+
+  supersonic-scsynth@0.25.5:
+    resolution: {integrity: sha512-8pF1oaqVwerAR8/es1mw/y6FZt/aqMt3Ta64ekZhDr00YLWdp5LyrWGdsebnlzA34atqbGcWp+IhvSADj84wwg==}
+    engines: {node: '>=18.0.0'}
+
+snapshots:
+
+  '@thi.ng/api@8.12.11': {}
+
+  '@thi.ng/binary@3.6.0':
+    dependencies:
+      '@thi.ng/api': 8.12.11
+
+  '@thi.ng/checks@3.8.1': {}
+
+  '@thi.ng/errors@2.6.0': {}
+
+  '@thi.ng/malloc@6.1.133':
+    dependencies:
+      '@thi.ng/api': 8.12.11
+      '@thi.ng/binary': 3.6.0
+      '@thi.ng/checks': 3.8.1
+      '@thi.ng/errors': 2.6.0
+
+  base64-js@1.5.1: {}
+
+  buffer@6.0.3:
+    dependencies:
+      base64-js: 1.5.1
+      ieee754: 1.2.1
+
+  ieee754@1.2.1: {}
+
+  supersonic-scsynth-core@0.25.5: {}
+
+  supersonic-scsynth-synthdefs@0.25.5: {}
+
+  supersonic-scsynth@0.25.5:
+    dependencies:
+      '@thi.ng/malloc': 6.1.133

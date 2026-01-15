@@ -1,0 +1,4 @@
+{:paths ["src" "resources"]
+ :deps {mhuebert/kitchen-async {:mvn/version "0.1.0"}
+        thheller/shadow-cljs {:mvn/version "3.3.5"}}
+ :launchpad/shadow-build-ids [:supersonic-demo]}

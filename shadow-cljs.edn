@@ -1,0 +1,13 @@
+{:deps     {}
+ :dev-http {9999 {:roots ["public" "target"]}}
+
+ :builds
+ {:supersonic-demo
+  {:target      :browser
+   :modules     {:main {:entries [net.arnebrasseur.supersonic-demo]}}
+   :output-dir  "target"
+   :asset-path  "/"
+   :devtools    {:repl-pprint true}
+   :build-hooks [(net.arnebrasseur.supersonic-demo.shadow-hooks/configure)
+                 (net.arnebrasseur.supersonic-demo.shadow-hooks/flush)]
+   }}}
