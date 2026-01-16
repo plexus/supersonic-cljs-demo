@@ -185,6 +185,8 @@
     (set! pointers (assoc pointers pid [note (current-synth :note note)]))))
 
 (defn main! []
+  (set! current-synth (synth "sonic-pi-prophet"))
+
   (js/document.body.appendChild (hex-grid-html))
 
   (let [select  (html "<select>"
@@ -200,7 +202,6 @@
                        (.setAttribute (.-target e) "disabled" "disabled")
                        (.then (sc/init! synthdefs)
                               #(.remove (.-target e)))))
-  (set! current-synth (synth "sonic-pi-prophet"))
 
   (doseq [el (js/document.querySelectorAll "use")]
     (.addEventListener el "pointerdown"
@@ -225,14 +226,3 @@
                                   (set! pointers (dissoc pointers (.-pointerId e)))))))
 
 (.addEventListener js/document "DOMContentLoaded" main!)
-
-
-(comment
-
-  (def prophet (synth "sonic-pi-prophet"))
-  (def blade (synth "sonic-pi-blade"))
-
-
-
-  (js/document.addEventListener "click" #(sc/init! synthdefs))
-  )
